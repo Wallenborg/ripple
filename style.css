@@ -1,3 +1,32 @@
+/* Resetting styles */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+p {
+  margin: 0;
+}
+
+.title {
+  position: fixed;
+  font-size: 4rem;
+  color: antiquewhite;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
 .ripple-container {
   position: relative;
   width: 100vw;
