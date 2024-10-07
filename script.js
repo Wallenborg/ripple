@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Animate each letter with a color change and stagger effect
     titleTl.to(span, {
-      duration: 0.5,
+      duration: 0.3,
       color: "#f7f7f7", // Change the color of each letter
       stagger: 0.01, // Adds delay between letters
     });

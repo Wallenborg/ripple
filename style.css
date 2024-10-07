@@ -38,6 +38,12 @@ p {
   font-style: normal;
 }
 
+@media only screen and (min-width: 768px) {
+  .title {
+    font-size: 5rem;
+  }
+}
+
 .ripple-container {
   position: relative;
   width: 100vw;
