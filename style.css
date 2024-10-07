@@ -31,7 +31,7 @@ p {
 
 .title {
   font-size: 2.2rem;
-  color: #1c51f0;
+  color: #1a4d7a;
   pointer-events: none;
   font-family: "Rubik Scribble", system-ui;
   font-weight: 400;
@@ -49,14 +49,14 @@ p {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-color: #1c51f0;
+  background-color: #1a4d7a;
   cursor: pointer;
 }
 
 .ripple {
   position: absolute;
   border-radius: 50%;
-  border: 2px solid rgba(255, 255, 255, 0.4);
+  border: 2px solid #a0e3f0;
   pointer-events: none;
   opacity: 1;
   z-index: 2000;
