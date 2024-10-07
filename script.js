@@ -1,3 +1,33 @@
+// Wait for the DOM to load before running the animation
+document.addEventListener("DOMContentLoaded", function () {
+  // Select the title element
+  const title = document.querySelector(".title");
+
+  // Split the text content of the title into individual letters
+  const titleLetters = title.textContent.split("");
+  title.textContent = ""; // Clear the original title text
+
+  // Create a GSAP timeline for the title animation
+  const titleTl = gsap.timeline({
+    repeat: -1, // Infinite loop
+    yoyo: true, // Reverse animation after completing
+  });
+
+  // Loop through each letter, wrap it in a span, and append it to the title
+  titleLetters.forEach((letter) => {
+    const span = document.createElement("span");
+    span.textContent = letter;
+    title.appendChild(span); // Append each span to the title
+
+    // Animate each letter with a color change and stagger effect
+    titleTl.to(span, {
+      duration: 0.5,
+      color: "#f7f7f7", // Change the color of each letter
+      stagger: 0.01, // Adds delay between letters
+    });
+  });
+});
+
 // Select the ripple container
 const rippleContainer = document.querySelector(".ripple-container");
 
