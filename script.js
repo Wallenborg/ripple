@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Create a GSAP timeline for the title animation
   const titleTl = gsap.timeline({
-    repeat: -1, // Infinite loop
+    repeat: 1, // Infinite loop
     yoyo: true, // Reverse animation after completing
   });
 
