@@ -17,14 +17,21 @@ p {
   margin: 0;
 }
 
-.title {
+.title-box {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  z-index: 1000;
+  width: 100vw;
+  height: 60px;
+  pointer-events: none;
+}
+
+.title {
   font-size: 2rem;
   color: antiquewhite;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1000;
+  pointer-events: none;
 }
 
 .ripple-container {
